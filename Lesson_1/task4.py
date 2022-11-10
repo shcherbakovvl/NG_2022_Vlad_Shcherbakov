@@ -1,6 +1,3 @@
-# importing library math for sqrt function
-import math
-
 # function that calculating discriminant and roots
 def formula():
     d = (b * b) - (4 * a * c)
@@ -8,11 +5,11 @@ def formula():
     print ("Discriminant = ", d)
     print ("======================================")
     if d > 0:
-        x1 = (-b + math.sqrt(d)) / (2 * a)
-        x2 = (-b - math.sqrt(d)) / (2 * a)
+        x1 = (-b + d ** 0.5) / (2 * a)
+        x2 = (-b - d ** 0.5) / (2 * a)
         print("There is two roots. First(x1) = %.2f, second(x2) = %.2f" % (x1, x2))
     elif d == 0:
-        x = (-b + math.sqrt(d)) / 2 * a
+        x = (-b + d ** 0.5) / 2 * a
         print("There is only one root and it equals ",x)
     else:
         print("There is no roots")
